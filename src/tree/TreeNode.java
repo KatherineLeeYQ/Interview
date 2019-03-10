@@ -1,8 +1,12 @@
 package tree;
 
 public class TreeNode {
-    public int val;
+    public char val;
     public TreeNode left;
     public TreeNode right;
-    TreeNode(int x) { val = x; }
+    TreeNode(char x) { val = x; }
+
+    public void print() {
+        System.out.print(this.val + " ");
+    }
 }

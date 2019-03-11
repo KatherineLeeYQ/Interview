@@ -1,6 +1,7 @@
 package leetcode;
 
 /**
+ * 【Pow(x, n) 】
  * Note:
  * 不要直接用for循环去算，会超时。
  * 使用二分的方法。

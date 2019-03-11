@@ -2,7 +2,6 @@ package leetcode;
 
 import java.util.*;
 
-
 /**
  * Note:
  * 1. 不要笼统地全盘去考虑，最好从中间抽取一个点，考虑好情况后，再考虑边界情况。

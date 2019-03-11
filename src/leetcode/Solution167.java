@@ -3,6 +3,9 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 【两数之和 II - 输入有序数组】
+ */
 public class Solution167 {
     public int[] twoSum(int[] numbers, int target) {
         int[] res = new int[2];

@@ -1,5 +1,8 @@
 package leetcode;
 
+/**
+ * 【路径交叉】
+ */
 public class Solution335 {
     public boolean isSelfCrossing(int[] x) {
         for (int i = 3; i < x.length; ++i) {

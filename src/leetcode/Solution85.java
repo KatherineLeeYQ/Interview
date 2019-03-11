@@ -1,6 +1,7 @@
 package leetcode;
 
 /**
+ * 【最大矩形】：二维二进制矩阵，找出只包含 1 的最大矩形，并返回其面积
  * Note:
  * 思路类似Solution84
  * https://blog.csdn.net/qq_41855420/article/details/87459549

@@ -13,18 +13,15 @@ public class TraversalBinaryTree {
      * 非递归的实现思路如下，对于任一节点p：
      *
      * 1) 将p设置为当前节点，go 2
-     * 2) 当前节点，入栈，输出
-     * 3) 将其left设置为当前节点
-     * 4) 当前节点不为null；真 -> go 1，假 -> go 5
+     * 2) 当前节点，入栈，【输出】
+     * 3) 将其left设置为当前节点，go 4
+     * 4) 当前节点不为null；真 -> go 2，假 -> go 5
      * 5) 栈不空，出栈一个节点q，将其right设置为当前节点
-     * 6) 当前节点不为null；真 -> go 1，假 -> go 5
+     * 6) 当前节点不为null；真 -> go 2，假 -> go 5
      * 7) 当前节点为null，遍历结束
      *
      */
     public static void preoderTraversal(TreeNode node) {
-        if (node == null)
-            return;
-
         Stack<TreeNode> stack = new Stack<>();
 
         TreeNode curNode = node;
@@ -44,28 +41,23 @@ public class TraversalBinaryTree {
      *
      * 非递归的实现思路如下，对于任一节点p：
      *
-     * 1) 将p设置为当前节点
+     * 1) 将p设置为当前节点，go 2
      * 2) 当前节点不为空，入栈
-     * 3) 将left设置为当前节点，go 2
-     * 4) 若栈不空，从栈里pop一个节点做为当前节点，输出
-     * 5) 将right设置为当前节点，go 2
-     * 6) 直到当前节点为空并且栈为空，遍历结束
+     * 3) 将left设置为当前节点，go 4
+     * 4) 当前节点不为null；真 -> go 2，假 -> go 5
+     * 5) 栈不空，出栈一个节点q，【输出】，将其right设置为当前节点
+     * 6) 当前节点不为null；真 -> go 2，假 -> go 5
+     * 7) 当前节点为null，遍历结束
      */
     public static void inoderTraversal(TreeNode node) {
-        if (node == null)
-            return;
-
         Stack<TreeNode> stack = new Stack<>();
 
         TreeNode curNode = node;
-        while (curNode != null || !stack.isEmpty()) {
-            while (curNode != null) {
-                stack.push(curNode);
-                curNode = curNode.left;
-            }
+        while (curNode != null) {
+            stack.push(curNode);
 
-            // left为空了
-            if (!stack.isEmpty()) {
+            curNode = curNode.left;
+            while (curNode == null && !stack.isEmpty()) {
                 curNode = stack.pop();
                 curNode.print();
 
@@ -89,11 +81,14 @@ public class TraversalBinaryTree {
      *
      */
     public static void postoderTraversal(TreeNode node) {
+        if (node == null)
+            return;
+
         Stack<TreeNode> stack = new Stack<>();
+        stack.push(node);
 
         TreeNode preNode = null; // 上一个输出的节点
         TreeNode curNode;        // 栈顶节点
-        stack.push(node);
 
         while (!stack.isEmpty()) {
             // 获取栈顶节点，但不弹栈

@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * 【组合总和】
  * Note：
- * 回溯算法
+ * 回溯算法：递归 & 非递归
  */
 public class Solution39 {
     // 递归回溯

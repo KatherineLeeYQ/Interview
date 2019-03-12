@@ -27,7 +27,7 @@ public class TraversalBinaryTree {
         TreeNode curNode = node;
         while (curNode != null) {
             stack.push(curNode);
-            curNode.print();
+            curNode.print(); // 在这里输出
 
             curNode = curNode.left;
             while (curNode == null && !stack.isEmpty()) {
@@ -59,7 +59,7 @@ public class TraversalBinaryTree {
             curNode = curNode.left;
             while (curNode == null && !stack.isEmpty()) {
                 curNode = stack.pop();
-                curNode.print();
+                curNode.print(); // 在这里输出
 
                 curNode = curNode.right;
             }

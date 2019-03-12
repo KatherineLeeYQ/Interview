@@ -1,0 +1,94 @@
+https://www.polarxiong.com/archives/Ubuntu-16-04%E4%B8%8BShadowsocks%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BC%98%E5%8C%96.html
+
+# 客户端Shadowsocks
+## 安装
+$ sudo apt-get update
+$ sudo apt-get install python3-pip
+$ sudo apt-get install python3-setuptools m2crypto # 为了支持加密方式
+$ sudo pip3 install shadowsocks
+
+可以改`python`命令和`pip`命令的别称：xxxx
+
+## 配置文件
+使用配置文件进行配置，方法创建/etc/shadowsocks.json文件，填入如下内容：
+```
+
+{
+    "server":"my_server_ip",
+    "server_port":8388,
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "password":"mypassword",
+    "timeout":300,
+    "method":"aes-256-cfb" 
+}
+```
+创建完毕后，赋予文件权限：
+```
+$ sudo chmod 755 /etc/shadowsocks.json
+```
+
+为了支持这些加密方式，你要需要安装:
+```
+$ sudo apt–get install python–m2crypto
+```
+
+然后使用配置文件在后台运行：
+````
+$ sudo ssserver -c /etc/shadowsocks.json -d start
+```
+
+## 配置开机自启动
+### 方法一
+编辑 /etc/rc.local 文件
+```
+sudo vi /etc/rc.local
+```
+在 exit 0 这一行的上边加入如下
+```
+/usr/local/bin/ssserver –c /etc/shadowsocks.json
+```
+### 方法二
+
+
+## 停止运行
+```
+ssserver -d stop
+```
+
+# 浏览器
+终端开启sslocal后：
+```
+$ nohuo sslocal -c ~/Shadowsocks/config.json &
+```
+这样在 Firefox 或者 Chrome 浏览器里设置上 SOCKS5 代理，地址 127.0.0.1，端口 1080 就可以科学上网了
+1. Proxy Type选择SOCKS5
+2. IP Address填127.0.0.1
+3. Port填1080
+4. 保存
+
+# proxychains
+## 安装
+Shadowsocks默认是用Socks5协议的，对于Terminal的get,wget等走Http协议的地方是无能为力的，所以需要转换成Http代理
+```
+sudo apt install proxychains
+```
+## 配置
+编辑配置文件
+```
+sudo vim /etc/proxychains.conf
+```
+在 [ProxyList] 下面（也就是末尾）加入代理类型，代理地址和端口，注释掉原来的代理并添加
+```
+socks5 127.0.0.1 1080
+```
+如果所在的网络很复杂，可能需要在配置文件中启用dynamic_chain - 按照列表中出现的代理服务器的先后顺序组成一条链，如果有代理服务器失效，则自动将其排除，但至少要有一个是有效的然后在 [ProxyList] 下添加多个代理
+默认：strict_chain - 按照后面列表中出现的代理服务器的先后顺序组成一条链，要求所有的代理服务器都是有效的
+##  测试
+```
+proxychains curl google.com
+```
+注意：proxychains支持的是socks，http, https协议.它们以tcp或者udp协议为基础, ping命令用的是 ICMP 协议， proxychains 不支持
+
+# 测试
+客户端浏览器开启代理后，访问`ip138.com`，若显示的ip是你的服务器ip，则配置成功。

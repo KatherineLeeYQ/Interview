@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472e6090-50fa-414f-b6f4-72ef3c7f80c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution54.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution328.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution45.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution55.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution59.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution61.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/Solution725.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/TraversalBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TraversalBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Interview/leetcode/Solution144.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Interview/leetcode/Solution144.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Interview/leetcode/Solution94.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Interview/leetcode/Solution94.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Interview/tree/TraversalBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Interview/tree/TraversalBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/Solution54.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/Solution54.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,21 +22,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Interview$Solution328.ic" NAME="Solution328 Coverage Results" MODIFIED="1552420632812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/leetcode/Solution54.java">
+        <entry file="file://$PROJECT_DIR$/src/leetcode/Solution328.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-            <state relative-caret-position="408">
-              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-            <state relative-caret-position="17">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
->>>>>>> Stashed changes
+            <state relative-caret-position="255">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -92,6 +98,13 @@
         <option value="$PROJECT_DIR$/src/leetcode/Solution144.java" />
         <option value="$PROJECT_DIR$/src/tree/TraversalBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/leetcode/Solution54.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution59.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution55.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution45.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution61.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution725.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/Solution328.java" />
       </list>
     </option>
   </component>
@@ -115,7 +128,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,6 +156,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -151,9 +164,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552325534370" />
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552265870641" />
+>>>>>>> Stashed changes
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552421118740" />
 >>>>>>> Stashed changes
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -176,20 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TraversalBinaryTree">
-    <configuration name="Solution113" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Solution113" />
-      <module name="Interview" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Solution328">
     <configuration name="Solution173" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.Solution173" />
       <module name="Interview" />
@@ -203,8 +207,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution39" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Solution39" />
+    <configuration name="Solution328" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution328" />
       <module name="Interview" />
       <extension name="coverage">
         <pattern>
@@ -216,8 +220,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution437" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.Solution437" />
+    <configuration name="Solution54" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution54" />
+      <module name="Interview" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution55" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.Solution55" />
       <module name="Interview" />
       <extension name="coverage">
         <pattern>
@@ -244,8 +261,12 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution328" />
+        <item itemvalue="Application.Solution55" />
+        <item itemvalue="Application.Solution54" />
         <item itemvalue="Application.TraversalBinaryTree" />
         <item itemvalue="Application.Solution173" />
+<<<<<<< Updated upstream
         <item itemvalue="Application.Solution437" />
         <item itemvalue="Application.Solution113" />
         <item itemvalue="Application.Solution39" />
@@ -253,6 +274,8 @@
 =======
         <item itemvalue="Application.PendingSolution407" />
         <item itemvalue="Application.Solution42" />
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </list>
     </recent_temporary>
@@ -270,22 +293,32 @@
       <workItem from="1552064575864" duration="29629000" />
 <<<<<<< Updated upstream
       <workItem from="1552249920437" duration="13939000" />
+<<<<<<< Updated upstream
       <workItem from="1552297144285" duration="17651000" />
 =======
       <workItem from="1552249920437" duration="14543000" />
       <workItem from="1552316230632" duration="80000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1552297144285" duration="30973000" />
+      <workItem from="1552420831286" duration="316000" />
 >>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="62466000" />
+=======
+    <option name="totallyTimeSpent" value="76104000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2086331" />
 =======
     <option name="totallyTimeSpent" value="44252000" />
@@ -295,6 +328,9 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
+>>>>>>> Stashed changes
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2108467" />
 >>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -323,7 +359,8 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.32982844" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Debug" order="9" visible="true" weight="0.255119" />
+      <window_info active="true" anchor="right" id="Debug" order="9" sideWeight="0.49892008" visible="true" weight="0.33259547" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5010799" side_tool="true" visible="true" weight="0.33259547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +405,24 @@
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/Solution54.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/Solution54.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/Solution328.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -385,6 +440,18 @@
       </expression>
       <expression>
         <expression-string>root.val == 10</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>-1%cols</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mark.length</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -668,11 +735,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution59.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/leetcode/Solution54.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <state relative-caret-position="408">
           <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+=======
+        <state relative-caret-position="391">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -680,6 +759,48 @@
         <state relative-caret-position="17">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
 >>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution55.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution45.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution61.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution725.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/Solution328.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
